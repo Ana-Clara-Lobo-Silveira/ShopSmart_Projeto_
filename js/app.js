@@ -14,7 +14,9 @@ function calcularTotal(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor do produto: ${v01}  Quantidade: ${v02}  Total: R$ ${v01*v02}</span>
+        <span>Valor do produto: ${v01}</span>
+        <span>Quantidade: ${v02}</span>
+        <span>Total: R$ ${v01*v02}</span>
         `;
     }
 };
@@ -29,7 +31,9 @@ function desconto(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor do produto: ${v01}  Desconto aplicado: ${v02}  Total: R$ ${v01 - ((v01*v02)/100)}</span>
+        <span>Valor do produto: ${v01} </span>
+        <span>Desconto aplicado: ${v02}</span>
+        <span>Valor do produto: Total: R$ ${v01 - ((v01*v02)/100)}</span>
 
         `;
     }
@@ -45,7 +49,9 @@ function juros(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor do produto: ${v01}  Juros aplicado: ${v02}  Total: R$ ${v01 + ((v01*v02)/100)}</span>
+        <span>Valor do produto: ${v01}</span>
+        <span>Juros aplicado: ${v02}</span>
+        <span>Total: R$ ${v01 + ((v01*v02)/100)}</span>
         `;
     }
 };
@@ -60,7 +66,9 @@ function comissao(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor da venda: ${v01}  Comissão(%): ${v02}  Comissão correspondente a: R$ ${(v01*v02)/100}</span>
+        <span>Valor da venda: ${v01}</span>
+        <span>Comissão(%): ${v02}</span>
+        <span>Comissão correspondente a: R$ ${(v01*v02)/100}</span>
         `;
     } 
 };
@@ -75,7 +83,9 @@ function lucro(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Preço da venda: ${v01}  Custo: ${v02}  Lucro: R$ ${v01 - v02}</span>
+        <span>Preço da venda: ${v01}</span>
+        <span>Custo: ${v02}</span>
+        <span>Lucro: R$ ${v01 - v02}</span>
         `;
     }
 };
