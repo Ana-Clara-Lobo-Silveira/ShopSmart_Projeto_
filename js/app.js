@@ -125,4 +125,5 @@ function limpar(){
     resultado.style.display = 'none';
     i01.value = '';
     i02.value = '';
+    i01.focus()
 };
