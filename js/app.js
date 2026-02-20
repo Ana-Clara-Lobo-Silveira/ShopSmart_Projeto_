@@ -9,7 +9,11 @@ function calcularTotal(){
     const v02 = parseFloat(i02.value);
 
     if(isNaN(v01) || isNaN(v02)){
-        alert('Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!')
+        resultado.style.display='flex';
+        resultado.innerHTML=
+        `
+        <p>Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!</p>
+        `
     } else{
         resultado.style.display='flex';
         resultado.innerHTML=
@@ -28,7 +32,11 @@ function desconto(){
     const v02 = parseFloat(i02.value);
 
     if(isNaN(v01) || isNaN(v02)){
-        alert('Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!')
+        resultado.style.display='flex';
+        resultado.innerHTML=
+        `
+        <p>Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!</p>
+        `
     } else{
         resultado.style.display='flex';
         resultado.innerHTML=
@@ -47,7 +55,11 @@ function juros(){
     const v02 = parseFloat(i02.value);
 
     if(isNaN(v01) || isNaN(v02)){
-        alert('Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!')
+        resultado.style.display='flex';
+        resultado.innerHTML=
+        `
+        <p>Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!</p>
+        `
     } else{
         resultado.style.display='flex';
         resultado.innerHTML=
@@ -66,7 +78,11 @@ function comissao(){
     const v02 = parseFloat(i02.value);
 
     if(isNaN(v01) || isNaN(v02)){
-        alert('Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!')
+        resultado.style.display='flex';
+        resultado.innerHTML=
+        `
+        <p>Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!</p>
+        `
     } else{
         resultado.style.display='flex';
         resultado.innerHTML=
@@ -86,7 +102,11 @@ function lucro(){
     const v02 = parseFloat(i02.value);
 
     if(isNaN(v01) || isNaN(v02)){
-        alert('Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!')
+        resultado.style.display='flex';
+        resultado.innerHTML=
+        `
+        <p>Inválido. Confira se o valor 01 ou valor 02 estão aplicados corretamente!</p>
+        `
     } else{
         resultado.style.display='flex';
         resultado.innerHTML=
