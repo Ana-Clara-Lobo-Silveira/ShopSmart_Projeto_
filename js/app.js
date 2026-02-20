@@ -15,9 +15,9 @@ function calcularTotal(){
         resultado.innerHTML=
         `
         <ul>
-            <li>Valor do produto: ${v01}</li>
+            <li>Valor do produto: R$ ${v01.toFixed(2)}</li>
             <li>Quantidade: ${v02}</li>
-            <li>Total: R$ ${v01*v02}</li>
+            <li>Total: R$ ${(v01*v02).toFixed(2)}</li>
         </ul>
         `;
     }
@@ -34,9 +34,9 @@ function desconto(){
         resultado.innerHTML=
         `
         <ul>
-            <li>Valor do produto: ${v01}</li>
+            <li>Valor do produto: R$ ${v01.toFixed(2)}</li>
             <li>Desconto aplicado: ${v02}</li>
-            <li>Valor do produto: Total: R$ ${v01 - ((v01*v02)/100)}</li>
+            <li>Valor do produto: Total: R$ ${(v01 - ((v01*v02)/100)).toFixed(2)}</li>
         </ul>
         `;
     }
@@ -53,9 +53,9 @@ function juros(){
         resultado.innerHTML=
         `
         <ul>
-            <li>Valor do produto: ${v01}</li>
+            <li>Valor do produto: R$ ${v01.toFixed(2)}</li>
             <li>Juros aplicado: ${v02}</li>
-            <li>Total: R$ ${v01 + ((v01*v02)/100)}</li>
+            <li>Total: R$ ${(v01 + ((v01*v02)/100)).toFixed(2)}</li>
         </ul>
         `;
     }
@@ -72,9 +72,9 @@ function comissao(){
         resultado.innerHTML=
         `
         <ul>
-            <li>Valor da venda: ${v01}</li>
+            <li>Valor da venda: R$ ${v01.toFixed(2)}</li>
             <li>Comissão(%): ${v02}</li>
-            <li>Comissão correspondente a: R$ ${(v01*v02)/100}</li>
+            <li>Comissão correspondente a: R$ ${((v01*v02)/100).toFixed(2)}</li>
         </ul>
 
         `;
@@ -92,9 +92,9 @@ function lucro(){
         resultado.innerHTML=
         `
         <ul>
-            <li>Preço da venda: ${v01}</li>
-            <li>Custo: ${v02}</li>
-            <li>Lucro: R$ ${v01 - v02}</li>
+            <li>Preço da venda: R$ ${v01.toFixed(2)}</li>
+            <li>Custo: R$ ${v02.toFixed(2)}</li>
+            <li>Lucro: R$ ${(v01 - v02).toFixed(2)}</li>
         </ul>
 
         `;
