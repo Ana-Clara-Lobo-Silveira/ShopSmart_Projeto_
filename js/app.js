@@ -14,9 +14,11 @@ function calcularTotal(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor do produto: ${v01}</span>
-        <span>Quantidade: ${v02}</span>
-        <span>Total: R$ ${v01*v02}</span>
+        <ul>
+            <li>Valor do produto: ${v01}</li>
+            <li>Quantidade: ${v02}</li>
+            <li>Total: R$ ${v01*v02}</li>
+        </ul>
         `;
     }
 };
@@ -31,10 +33,11 @@ function desconto(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor do produto: ${v01} </span>
-        <span>Desconto aplicado: ${v02}</span>
-        <span>Valor do produto: Total: R$ ${v01 - ((v01*v02)/100)}</span>
-
+        <ul>
+            <li>Valor do produto: ${v01}</li>
+            <li>Desconto aplicado: ${v02}</li>
+            <li>Valor do produto: Total: R$ ${v01 - ((v01*v02)/100)}</li>
+        </ul>
         `;
     }
 };
@@ -49,9 +52,11 @@ function juros(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor do produto: ${v01}</span>
-        <span>Juros aplicado: ${v02}</span>
-        <span>Total: R$ ${v01 + ((v01*v02)/100)}</span>
+        <ul>
+            <li>Valor do produto: ${v01}</li>
+            <li>Juros aplicado: ${v02}</li>
+            <li>Total: R$ ${v01 + ((v01*v02)/100)}</li>
+        </ul>
         `;
     }
 };
@@ -66,9 +71,12 @@ function comissao(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Valor da venda: ${v01}</span>
-        <span>Comissão(%): ${v02}</span>
-        <span>Comissão correspondente a: R$ ${(v01*v02)/100}</span>
+        <ul>
+            <li>Valor da venda: ${v01}</li>
+            <li>Comissão(%): ${v02}</li>
+            <li>Comissão correspondente a: R$ ${(v01*v02)/100}</li>
+        </ul>
+
         `;
     } 
 };
@@ -83,9 +91,12 @@ function lucro(){
         resultado.style.display='flex';
         resultado.innerHTML=
         `
-        <span>Preço da venda: ${v01}</span>
-        <span>Custo: ${v02}</span>
-        <span>Lucro: R$ ${v01 - v02}</span>
+        <ul>
+            <li>Preço da venda: ${v01}</li>
+            <li>Custo: ${v02}</li>
+            <li>Lucro: R$ ${v01 - v02}</li>
+        </ul>
+
         `;
     }
 };
