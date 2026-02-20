@@ -44,7 +44,7 @@ function desconto(){
         <ul>
             <li>Valor do produto: R$ ${v01.toFixed(2)}</li>
             <li>Desconto aplicado: ${v02}%</li>
-            <li>Valor do produto: Total: R$ ${(v01 - ((v01*v02)/100)).toFixed(2)}</li>
+            <li>Total: R$ ${(v01 - ((v01*v02)/100)).toFixed(2)}</li>
         </ul>
         `;
     }
