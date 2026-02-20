@@ -35,7 +35,7 @@ function desconto(){
         `
         <ul>
             <li>Valor do produto: R$ ${v01.toFixed(2)}</li>
-            <li>Desconto aplicado: ${v02}</li>
+            <li>Desconto aplicado: ${v02}%</li>
             <li>Valor do produto: Total: R$ ${(v01 - ((v01*v02)/100)).toFixed(2)}</li>
         </ul>
         `;
@@ -54,7 +54,7 @@ function juros(){
         `
         <ul>
             <li>Valor do produto: R$ ${v01.toFixed(2)}</li>
-            <li>Juros aplicado: ${v02}</li>
+            <li>Juros aplicado: ${v02}%</li>
             <li>Total: R$ ${(v01 + ((v01*v02)/100)).toFixed(2)}</li>
         </ul>
         `;
@@ -73,7 +73,7 @@ function comissao(){
         `
         <ul>
             <li>Valor da venda: R$ ${v01.toFixed(2)}</li>
-            <li>Comissão(%): ${v02}</li>
+            <li>Comissão(%): ${v02}%</li>
             <li>Comissão correspondente a: R$ ${((v01*v02)/100).toFixed(2)}</li>
         </ul>
 
