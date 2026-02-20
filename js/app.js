@@ -44,7 +44,7 @@ function desconto(){
         <ul>
             <li>Valor da compra: R$ ${v01.toFixed(2)}</li>
             <li>Desconto aplicado: ${v02}%</li>
-            <li>Valor do produto após desconto: R$ ${(v01 - ((v01*v02)/100)).toFixed(2)}</li>
+            <li>Valor da compra após desconto: R$ ${(v01 - ((v01*v02)/100)).toFixed(2)}</li>
         </ul>
         `;
     }
@@ -90,7 +90,7 @@ function comissao(){
         <ul>
             <li>Valor da venda: R$ ${v01.toFixed(2)}</li>
             <li>Comissão(%): ${v02}%</li>
-            <li>A comissão gerada será: R$ ${((v01*v02)/100).toFixed(2)}</li>
+            <li>A comissão gerada será de: R$ ${((v01*v02)/100).toFixed(2)}</li>
         </ul>
 
         `;
